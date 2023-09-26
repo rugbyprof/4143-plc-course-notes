@@ -1,6 +1,6 @@
 ## First Class Functions
 
-Let's explore `first-class functions` in `Go` within the context of our scary Dungeons & Dragons (D&D) theme. This overview will: 
+Let's explore `first-class functions` in `Go` within the context of our scary Dungeons & Dragons (D&D) theme. This overview will go through the following topics: 
 - first-class functions
 - anonymous functions
 - user-defined function types
