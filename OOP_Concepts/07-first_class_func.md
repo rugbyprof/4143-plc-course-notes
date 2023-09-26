@@ -187,8 +187,9 @@ func CreateSpellcaster(class string) SpellCaster {
 
 // uses the SpellCaster type as params, can be used to display
 // both CreateSpell and CreateSpellcaster
-func CastSpell(caster SpellCaster) {
+func CastSpell(caster SpellCaster, spell_count func() int) {
 	fmt.Println(caster())
+	spell_count() // everytime a spell is cast, we increment our spell count by 1
 }
 
 func main() {
@@ -202,23 +203,18 @@ func main() {
 		sorcerer := CreateSpellcaster("Sorcerer")
 
 		wizard()
-		CastSpell(fireball)      // Cast the Fireball spell
-		CastSpell(lightningBolt) // Cast the Lightning Bolt spell
-		num_spells()             // call the closure function twice to increment spell count
-		num_spells()
+		CastSpell(fireball, num_spells)      // Cast the Fireball spell
+		CastSpell(lightningBolt, num_spells) // Cast the Lightning Bolt spell
 
 		sorcerer()
-		CastSpell(fireball)      // Cast the Fireball spell
-		CastSpell(lightningBolt) // Cast the Lightning Bolt spell
-		num_spells()             // call the closure function twice to increment spell count
-		num_spells()
+		CastSpell(fireball, num_spells)      // Cast the Fireball spell
+		CastSpell(lightningBolt, num_spells) // Cast the Lightning Bolt spell
 	}
-  
-  lightningBolt := CreateSpell("Lightning Bolt")
-  CastSpell(lightningBolt)
 
-	fmt.Printf("The total number of spells cast was %d\n", num_spells())
+  // minus one from the called value when displaying. since every call increments count by 1
+	fmt.Printf("The total number of spells cast was %d\n", num_spells()-1)
 }
+
 ```
 
 ### Summary
