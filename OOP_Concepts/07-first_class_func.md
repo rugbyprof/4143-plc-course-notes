@@ -143,6 +143,83 @@ First-class functions are used in Go for various purposes, including:
 - Handling callbacks: Functions can be passed as callbacks to handle events or asynchronous operations.
 - Achieving modularity: Functions can be swapped or extended easily to achieve modularity and code reusability.
 
+#### Full working example using all of the above concepts
+```go
+package main
+
+import "fmt"
+
+// User defined function types
+type Spell func() string
+type SpellCaster func() string
+
+// CLOSURE - counter for number of spells cast
+func SpellsCast(num int) func() int {
+	count := 0
+	return func() int {
+		count += 1
+		return count
+	}
+}
+
+// higher order function, returns a function
+// returns a function with the type SpellCaster
+func CreateSpell(spellName string) SpellCaster {
+	return func() string {
+		return "Casting " + spellName + " spell!"
+	}
+}
+
+// higher order function, returns a function
+// returns a function with the type SpellCaster
+func CreateSpellcaster(class string) SpellCaster {
+	if class == "Wizard" {
+		return func() string {
+			return "Casting a wizard spell!"
+		}
+	} else if class == "Sorcerer" {
+		return func() string {
+			return "Casting a sorcerer spell!"
+		}
+	}
+	return nil
+}
+
+// uses the SpellCaster type as params, can be used to display
+// both CreateSpell and CreateSpellcaster
+func CastSpell(caster SpellCaster) {
+	fmt.Println(caster())
+}
+
+func main() {
+	num_spells := SpellsCast(0)
+
+	for i := 1; i <= 10; i++ {
+		fireball := CreateSpell("Fireball")
+		wizard := CreateSpellcaster("Wizard")
+
+		lightningBolt := CreateSpell("Lightning Bolt")
+		sorcerer := CreateSpellcaster("Sorcerer")
+
+		wizard()
+		CastSpell(fireball)      // Cast the Fireball spell
+		CastSpell(lightningBolt) // Cast the Lightning Bolt spell
+		num_spells()             // call the closure function twice to increment spell count
+		num_spells()
+
+		sorcerer()
+		CastSpell(fireball)      // Cast the Fireball spell
+		CastSpell(lightningBolt) // Cast the Lightning Bolt spell
+		num_spells()             // call the closure function twice to increment spell count
+		num_spells()
+	}
+  
+  lightningBolt := CreateSpell("Lightning Bolt")
+  CastSpell(lightningBolt)
+
+	fmt.Printf("The total number of spells cast was %d\n", num_spells())
+}
+```
 
 ### Summary
 
