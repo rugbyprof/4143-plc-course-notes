@@ -164,7 +164,7 @@ func SpellsCast(num int) func() int {
 
 // higher order function, returns a function
 // returns a function with the type SpellCaster
-func CreateSpell(spellName string) SpellCaster {
+func CreateSpell(spellName string) Spell {
 	return func() string {
 		return "Casting " + spellName + " spell!"
 	}
@@ -187,33 +187,33 @@ func CreateSpellcaster(class string) SpellCaster {
 
 // uses the SpellCaster type as params, can be used to display
 // both CreateSpell and CreateSpellcaster
-func CastSpell(caster SpellCaster, spell_count func() int) {
-	fmt.Println(caster())
+func CastSpell(caster SpellCaster, spell Spell, spell_count func() int) {
+	caster()
+  fmt.Println(caster())
 	spell_count() // everytime a spell is cast, we increment our spell count by 1
 }
 
 func main() {
-	num_spells := SpellsCast(0)
+  num_spells := SpellsCast(0)
+
+  wizard := CreateSpellcaster("Wizard")
+  sorcerer := CreateSpellcaster("Sorcerer")
+
+  fireball := CreateSpell("Fireball")
+  lightningBolt := CreateSpell("Lightning Bolt")
 
 	for i := 1; i <= 10; i++ {
-		fireball := CreateSpell("Fireball")
-		wizard := CreateSpellcaster("Wizard")
+		CastSpell(wizard, fireball, num_spells)      // Cast the Fireball spell
+		CastSpell(wizard, lightningBolt, num_spells) // Cast the Lightning Bolt spell
 
-		lightningBolt := CreateSpell("Lightning Bolt")
-		sorcerer := CreateSpellcaster("Sorcerer")
-
-		wizard()
-		CastSpell(fireball, num_spells)      // Cast the Fireball spell
-		CastSpell(lightningBolt, num_spells) // Cast the Lightning Bolt spell
-
-		sorcerer()
-		CastSpell(fireball, num_spells)      // Cast the Fireball spell
-		CastSpell(lightningBolt, num_spells) // Cast the Lightning Bolt spell
+		CastSpell(sorcerer, fireball, num_spells)      // Cast the Fireball spell
+		CastSpell(sorcerer, lightningBolt, num_spells) // Cast the Lightning Bolt spell
 	}
 
   // minus one from the called value when displaying. since every call increments count by 1
 	fmt.Printf("The total number of spells cast was %d\n", num_spells()-1)
 }
+
 
 ```
 
