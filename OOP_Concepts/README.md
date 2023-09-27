@@ -15,7 +15,7 @@
 
 7. **[First-Class Functions](07-first_class_func.md)**: Discuss the concept of first-class functions in Go and how functions can be treated as values, covering anonymous functions and user-defined function types.
 
-8. **[Inheritance](08-inheritance.md)**: How does Go implement inheritance?
+8. **[Composition and Packages](08-composition_and_packages.md)**: How does Go implement inheritance or rather, why doesn't it?
 
 9. **[Interfaces and Inheritance](09-interfaces_and_inheritance.md)**: Finally, discuss how Go achieves polymorphism through interfaces and compare it to traditional inheritance.
 
