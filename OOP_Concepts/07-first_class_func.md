@@ -221,4 +221,4 @@ func main() {
 
 First-class functions in Go empower you to create flexible, dynamic, and modular code, just like characters in a D&D world who can learn and cast different spells or use various abilities as needed.
 
-[Previous: 06-methods_vs_functions.md](06-methods_vs_functions.md) | [Next: 08-inheritance.md](08-inheritance.md)
+[Previous: 06-methods_vs_functions.md](06-methods_vs_functions.md) | [Next: 08-composition_and_packages.md](08-composition_and_packages.md)
