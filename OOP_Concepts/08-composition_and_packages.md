@@ -1,4 +1,4 @@
-## Composition over Inheritance
+## Composition and Packages
 
 In Go there are not traditional classes along with inheritance as in traditional object-oriented languages like Java or C++. But you can achieve similar concepts using `struct`s embedded with other structs (composition) and also the `interface` type that enforce certain methods.
 
