@@ -12,7 +12,7 @@ And if we did have separate packages for each character type, how would an `Atta
 Having a common method name like `Attack` across different character types can simplify your code and provide consistency. You can achieve this by defining an interface within the generic character types that other characters must implement. There is an example provided below.
 
 
-## Example
+## Packages Example
 
 Let's assume you have the following directory structure:
 
