@@ -188,9 +188,9 @@ func CreateSpellcaster(class string) SpellCaster {
 // uses the SpellCaster type as params, can be used to display
 // both CreateSpell and CreateSpellcaster
 func CastSpell(caster SpellCaster, spell Spell, spell_count func() int) {
-	caster()
+  caster()
   fmt.Println(caster())
-	spell_count() // everytime a spell is cast, we increment our spell count by 1
+  spell_count() // everytime a spell is cast, we increment our spell count by 1
 }
 
 func main() {
@@ -211,7 +211,7 @@ func main() {
 	}
 
   // minus one from the called value when displaying. since every call increments count by 1
-	fmt.Printf("The total number of spells cast was %d\n", num_spells()-1)
+  fmt.Printf("The total number of spells cast was %d\n", num_spells()-1)
 }
 
 
