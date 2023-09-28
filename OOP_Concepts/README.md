@@ -22,3 +22,5 @@
 10. **[Packages](10-packages_in_depth.md)**: Showcase the power of packages in Golang and the ease of code reuse in projects. Code examples showcase useful package structures as well as basic syntax needed to work with multiple types of packages. 
    
 11. **[Composition Over Inheritance](11-comp_over_inherit.md)**: Reinforce the idea of composition over inheritance, showing how to embed structs within other structs and use composition to build complex types.
+   
+12. **[Encapsulation](12-encapsulation.md)** Further clarify implementation hiding within Go and how the language implements public/private for its data structures and packages.  
