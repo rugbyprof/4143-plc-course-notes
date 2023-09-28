@@ -42,4 +42,4 @@ There is a fundamental difference between a `method` and a `function`, although 
 - In summary, the key difference between a `function` and a `method` in `Go` is that a function is a standalone block of code, while a method is associated with a specific type and can access and manipulate the data of that type. 
 - Methods provide a way to define behavior that is closely tied to the characteristics of a particular data structure, enhancing encapsulation and code organization.
 
-[Previous: 05-struct_vs_interface.md](05-struct_vs_interface.md) | [Next: 07-first_class_func.md](07-first_class_func.md)
+[Previous: 05-struct_vs_interface.md](05-struct_vs_interface.md) | [Next: 07-first_class_func.md](07-functions.md)
