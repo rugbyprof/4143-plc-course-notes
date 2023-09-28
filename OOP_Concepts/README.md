@@ -17,8 +17,8 @@
 
 8. **[Interfaces](08-interfaces.md)**: Go deeper into interfaces, covering interface declaration, implementation, and polymorphism
 
-9. **[Composition and Packages](09-composition_and_packages.md)**: 
+9. **[Composition and Packages](09-composition_and_packages.md)**: Jump into more advanced concepts within composition and packages in golang. Introductory level packages. 
 
-10. **[Packages](10-packages_in_depth.md)**: Showcase the power of packages in Golang and the ease of code reuse in projects. 
+10. **[Packages](10-packages_in_depth.md)**: Showcase the power of packages in Golang and the ease of code reuse in projects. More useful package structure
    
 11. **[Composition Over Inheritance](11-comp_over_inherit.md)**: Reinforce the idea of composition over inheritance, showing how to embed structs within other structs and use composition to build complex types.
