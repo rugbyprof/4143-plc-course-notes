@@ -114,7 +114,7 @@ func _main() {
 
 #### Summary 
 - `Structs` are used for defining data structures with fields and methods
-- `Interfaces` are used for defining behavior through method signatures.
+- `Interfaces` are used for defining behavior through method signatures that structs must adhere to. 
 - `Slices of Structs` that implement the rules of an interface. This allows you to mix and match structs in a slice if the structs in that slice all fulfill the obligations of a common interface. As shown above.
 - `Explicit` we can begin to see why Go is a very explicit language in the way that we must write our methods to perform any intended action on the struct. You must explicitly code that functionality. GetName() and Attack() are good at visualizing this.  
 - In the context of D&D, `structs` represent character types with attributes, while `interfaces` represent shared actions like attacking.
