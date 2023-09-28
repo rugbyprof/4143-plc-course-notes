@@ -1,20 +1,6 @@
-## Interfaces and Inheritance
+### Explanation of packages and more ways to organize them in a project
 
-#### Q:
-How would we have an attack method for each character type if we cannot overload methods (same name, different param lists)? 
-#### A:
-You would create different packages for each character type, and import the base character package.
-
-#### Q:
-And if we did have separate packages for each character type, how would an `Attack` interface be implemented and/or enforced for all character types
-
-#### A:
-Having a common method name like `Attack` across different character types can simplify your code and provide consistency. You can achieve this by defining an interface within the generic character types that other characters must implement. There is an example provided below.
-
-
-## Packages Example
-
-Let's assume you have the following directory structure:
+Let's assume you have the following directory structure shown below, 
 
 ```
 DandD/
@@ -30,6 +16,8 @@ DandD/
 │   └── warrior.go (implementation for warriors)
 └── ...
 ```
+
+This is different from the last slide where we showed you the Wizard, Warrior and Character structs all in the same package. Now they are all different packages. With this comes implications though... Run through the following code. 
 
 ### Define the Character Interface:
 
@@ -128,4 +116,4 @@ func main() {
 - By defining an interface (`Attacker`) in the `character` package and implementing it in the `wizard` and `warrior` packages, you can enforce a common behavior (in the `Attack` method) across different character types. 
 - This approach allows you to work with characters uniformly in your main code while still leveraging the unique implementations of the `Attack` method for each character type.
 
-[Previous: 08-inheritance.md](08-inheritance.md) | [Next: 10-interfaces.md](10-interfaces.md)
+[Previous: 08-inheritance.md](08-inheritance.md) | [Next: 11-comp_over_inherit.md](11-comp_over_inherit.md)
