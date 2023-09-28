@@ -54,7 +54,7 @@ Go takes a different approach, emphasizing composition over inheritance. It does
 
 Go's approach simplifies the language, reduces complexity, and encourages a more flexible and modular design while avoiding many of the pitfalls associated with traditional inheritance.
 
-#Examples:
+# Examples:
 ### Composition by Embedding Structs:
 
 Let's explore this concept of composition using the goto Dungeons & Dragons (D&D) theme as an example. This will include composing structs by embedding other structs within them. and ultimately embedding slices of structs. Composition in Go is achieved by embedding structs within other structs. This allows you to reuse and compose behavior by including instances of other structs as fields. In the context of D&D, let's consider character classes as an example:
