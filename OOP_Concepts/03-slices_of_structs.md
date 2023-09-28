@@ -8,6 +8,7 @@ A slice in Go is a dynamically sized, flexible view of an array. Slices allow yo
 
    Here, `names` is a slice of strings, containing three elements.
 
+They are like arrays in C++. The type is explicitly declared, unlike Python's implicit allocation. 
 
 ## Slices Of Structs
 
