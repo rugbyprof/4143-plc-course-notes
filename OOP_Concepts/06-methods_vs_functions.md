@@ -78,6 +78,6 @@ In Go, functions and methods are both used to define blocks of code that perform
    - Functions can have any name, but methods must have unique names within their type.
    - Methods enable you to define behavior specific to a type, leading to more structured and organized code.
 
-In summary, functions in Go are standalone and operate on their parameters, while methods are tied to specific types and operate on instances of those types. Methods enable you to define behavior that is closely related to a type, making your code more organized and expressive.
+Functions in Go are standalone and operate on their parameters, while methods are tied to specific types and operate on instances of those types. Methods enable you to define behavior that is closely related to a type, making your code more organized and expressive.
 
-[Previous: 05-struct_vs_interface.md](05-struct_vs_interface.md) | [Next: 07-first_class_func.md](07-functions.md)
+[Previous: 05-struct_vs_interface.md](05-struct_vs_interface.md) | [Next: 07-functions.md](07-functions.md)
