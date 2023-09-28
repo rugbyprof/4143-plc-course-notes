@@ -1,5 +1,126 @@
 ### Explanation of packages and more ways to organize them in a project
 
+
+1. **Package Declaration and Visibility**:
+
+   ```go
+   // packageexample.go
+   package mypackage
+
+   import "fmt"
+
+   // Exported variable
+   var ExportedVar = 42
+
+   // Unexported variable (only accessible within the package)
+   var unexportedVar = "unexported"
+
+   // Exported function
+   func ExportedFunction() {
+       fmt.Println("Exported function")
+   }
+
+   // Unexported function (only accessible within the package)
+   func unexportedFunction() {
+       fmt.Println("Unexported function")
+   }
+   ```
+
+   In this example, `ExportedVar` and `ExportedFunction` are exported and can be used outside the package, while `unexportedVar` and `unexportedFunction` are unexported and only accessible within the package.
+
+2. **Package Imports**:
+
+   ```go
+   // main.go
+   package main
+
+   import (
+       "fmt"
+       "mypackage"
+   )
+
+   func main() {
+       fmt.Println(mypackage.ExportedVar) // Accessing an exported variable
+       mypackage.ExportedFunction()       // Calling an exported function
+   }
+   ```
+
+   In this example, the `mypackage` package is imported and its exported identifiers are used in the `main` package.
+
+3. **Main Package and Entry Point**:
+
+   ```go
+   // main.go
+   package main
+
+   import "fmt"
+
+   func main() {
+       fmt.Println("Hello, world!")
+   }
+   ```
+
+   The `main` package serves as the entry point for the Go program, and it contains the `main` function, which is executed when the program runs.
+
+4. **Creating Your Own Packages**:
+
+   Let's say you have a directory structure like this:
+
+   ```
+   myproject/
+   ├── main.go
+   ├── mypackage/
+   │   ├── packageexample.go
+   │   └── anotherpackage.go
+   ```
+
+   You can organize related functionality into separate files within the `mypackage` package directory, and each file should have the same package declaration, e.g., `package mypackage`.
+
+5. **Package Initialization**:
+
+   ```go
+   // mypackage/packageexample.go
+   package mypackage
+
+   import "fmt"
+
+   // Initialization code
+   func init() {
+       fmt.Println("Initialization of mypackage")
+   }
+   ```
+
+   The `init` function in a package is automatically called when the package is imported. This is often used for package-level setup.
+
+6. **Package Documentation**:
+
+   ```go
+   // mypackage/packageexample.go
+   package mypackage
+
+   // ExportedFunction is an example of an exported function.
+   func ExportedFunction() {
+       // ...
+   }
+   ```
+
+   You can add comments like this to document your exported identifiers. To generate documentation, you can use the `godoc` tool.
+
+7. **Package Versioning**:
+
+   Go modules provide a way to manage package dependencies and versions. You can create a `go.mod` file to specify your module's dependencies, including their versions. Here's a simplified example:
+
+   ```
+   module mymodule
+
+   require (
+       github.com/somepackage v1.2.3
+   )
+   ```
+
+   This example specifies a dependency on `github.com/somepackage` at version `v1.2.3`.
+
+### More ways of organizing your code with a packages code example. 
 Let's assume you have the following directory structure shown below, 
 
 ```
