@@ -70,7 +70,7 @@ capacity := cap(people)
 
 
 
-In this example, `people` is a slice of `Person` structs. Each element in the `people` slice is a `Person` struct with its own `FirstName`, `LastName`, and `Age` fields. We then show how to add "David" later on. 
+In this example, `people` is a slice of `Person` structs. Each element in the `people` slice is a `Person` struct with its own `FirstName`, `LastName`, and `Age` fields. We then show how to add "David" later on, and then show much greater detail behind the slice of structs. 
 
 Using slices of structs is common in `Go` for organizing and working with collections of structured data. It allows you to manage and manipulate groups of related data entities efficiently.
 
