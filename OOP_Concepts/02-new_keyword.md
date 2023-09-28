@@ -1,4 +1,4 @@
-## The New Keyword in Go
+## Keywords in Go
 
 In Go, naming conventions such as using `New` in front of a function name and capitalizing method names have specific meanings and significance.
 
