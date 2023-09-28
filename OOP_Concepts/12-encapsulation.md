@@ -57,20 +57,26 @@ BOSS
 PROGRAMMER
 
 ### But what if we did lowercase .toUpper()?
+
 It would error because anything beginning with a lowercase character is unexported.
 
+```
 res := strings.toUpper(slc[x])
 
 Output:
 ./prog.go:22:9: cannot refer to unexported name strings.toUpper
 ./prog.go:22:9: undefined: strings.toUpper
+```
 
 ## Why is this knowledge useful?
-because when we work with packages and modules in Go, we often will declare structs to use throughout our project and may want to expose some functionality within that struct to be useable throughout the project. 
-If the method is simply used for internal setup of the data type then you may not want to export it so you can hide the implementation details. 
 
+- Because when we work with packages and modules in Go, we often will declare structs to use throughout our project and may want to expose some functionality within that struct to be useable throughout the project. 
+- If the method is simply used for internal setup of the data type then you may not want to export it so you can hide the implementation details. 
+
+```
 EXPORTED:         func Attack(w wizard) int
 NOT EXPORTED:     func attack(w Wizard) int
+```
 
 This file is intended to clarify some more object oriented concepts that Go implements in it's own fashion. 
 
