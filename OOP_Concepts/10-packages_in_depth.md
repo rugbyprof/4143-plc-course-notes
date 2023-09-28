@@ -17,7 +17,7 @@ DandD/
 └── ...
 ```
 
-This is different from the last slide where we showed you the Wizard, Warrior and Character structs all in the same package. Now they are all different packages. With this comes implications though... Run through the following code. 
+This is different from the last slide where you were shown the Wizard, Warrior and Character structs all in the same package. Now they are all different packages. With this comes implications though... Run through the following code. 
 
 ### Define the Character Interface:
 
@@ -116,4 +116,4 @@ func main() {
 - By defining an interface (`Attacker`) in the `character` package and implementing it in the `wizard` and `warrior` packages, you can enforce a common behavior (in the `Attack` method) across different character types. 
 - This approach allows you to work with characters uniformly in your main code while still leveraging the unique implementations of the `Attack` method for each character type.
 
-[Previous: 08-inheritance.md](08-inheritance.md) | [Next: 11-comp_over_inherit.md](11-comp_over_inherit.md)
+[Previous: 09-composition_and_packages.md](09-composition_and_packages.md) | [Next: 11-comp_over_inherit.md](11-comp_over_inherit.md)
