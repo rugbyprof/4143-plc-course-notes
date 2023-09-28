@@ -152,4 +152,4 @@ In this code:
 
 This code illustrates how Go can achieve concepts of `OOP` like `Polymorphism`, `Encapsulation`, and `Abstraction` through the use of `struct embedding`, 'composition' and `interfaces`.
 
-[Previous: 09-interfaces_and_inheritance.md](07-first_class_func.md) | [Next: 11-comp_over_inherit.md](11-comp_over_inherit.md)
+[Previous: 08-interfaces.md](08-interfaces.md) | [Next: 10-packages_in_depth.md](10-packages_in_depth.md)
