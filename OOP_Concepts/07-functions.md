@@ -1,13 +1,13 @@
 ## Functions
 
-Let's explore the idea of `first-class functions` in `Go` within the context of our scary Dungeons & Dragons (D&D) theme. This overview will go through the following topics: 
+Let's explore the idea of `first-class functions` in `Go` within the context of our scary Dungeons & Dragons (D&D) theme. This overview on functions in Golang will go through the following topics: 
 - first-class functions
 - anonymous functions
 - user-defined function types
 - higher-order functions
 - returning functions from other functions
 - closures
-- and sone other practical use cases
+- and many other practical use cases
 
 ### What are First-Class Functions?
 
