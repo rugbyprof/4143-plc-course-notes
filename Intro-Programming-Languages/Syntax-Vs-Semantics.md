@@ -83,7 +83,7 @@ In this revised code, we use `strconv.Atoi` to convert the string `y` into an in
   # Defining Syntax and Semantics (in much greater detail)
 	We will now look at the specific defining characteristics of syntax and semantics
 
-  # **Syntax**:
+  # **Syntax**: (examples)
     
 
 **Comments:** Comments are used to add explanations or notes within the code. They are not executed and are typically for human readers. In C-style languages, comments start with `//` for single-line comments and `/* ... */` for multi-line comments.
@@ -202,7 +202,7 @@ In this revised code, we use `strconv.Atoi` to convert the string `y` into an in
 	Many languages are case-sensitive, meaning that myVariable and myvariable are treated as distinct identifiers. this is by design so there is no overlap in references during runtime later on in the program. 
 
 
-#  **Semantics**
+#  **Semantics** (examples)
   
 
 ### Meaning of Statements: 
