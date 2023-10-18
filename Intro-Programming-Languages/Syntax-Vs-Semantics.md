@@ -80,7 +80,8 @@ In this revised code, we use `strconv.Atoi` to convert the string `y` into an in
 
   NOTE: syntax is like the grammar of a programming language - it enforces the rules for how you must write code, while semantics is about the meaning of your code and whether it does what you intend it to do. Both syntax and semantics are crucial for writing reliable and functional software. You must first learn the syntax to write semantically correct code. You can't have good semantics without proper syntax usage. 
 
-  ### Defining Syntax and Semantics (in much greater detail)
+  # Defining Syntax and Semantics (in much greater detail)
+	We will now look at the specific defining characteristics of syntax and semantics
 
   # **Syntax**:
     
