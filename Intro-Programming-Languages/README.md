@@ -1,5 +1,6 @@
+# Intro to Programming Languages
 
-The chapter introduces the core concepts of programming languages, focusing on the base level topics such as syntax and semantics. It explores compilation and interpretation methods, static vs. dynamic typing, and various programming paradigms. The chapter also outlines the key goals and objectives that programming languages aim to achieve, providing a foundational understanding for further exploration in software development.
+The guide introduces the core concepts of programming languages, focusing on the base level topics such as syntax and semantics. It explores compilation and interpretation methods, static vs. dynamic typing, and various programming paradigms. The guide also outlines the key goals and objectives that programming languages aim to achieve, providing a foundational understanding for further exploration in software development.
 
 **1.1: The Importance of Programming Languages**
 - This section introduces the fundamental role that programming languages play in the world of computing.
