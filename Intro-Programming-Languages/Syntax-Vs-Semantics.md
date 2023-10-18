@@ -162,9 +162,9 @@ In this revised code, we use `strconv.Atoi` to convert the string `y` into an in
 
    ```python
    try:
-       // Code that might throw an exception
+       ### Code that might throw an exception
    except Error as err:
-       // Code to run in event of error
+       ### Code to run in event of error
    ```
 
 **Lambda Expressions:** Syntax for defining anonymous functions or closures, which are often used in functional programming.
