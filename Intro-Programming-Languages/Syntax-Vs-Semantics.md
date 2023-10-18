@@ -187,38 +187,38 @@ In this revised code, we use `strconv.Atoi` to convert the string `y` into an in
    ```
 
 ### Grammar Rules: 
-	Syntax defines the set of rules that dictate how programs must be written in a language. These rules ensure that the code is structured correctly and can be parsed by the compiler or interpreter. For example, in many languages, statements must end with a semicolon.
+Syntax defines the set of rules that dictate how programs must be written in a language. These rules ensure that the code is structured correctly and can be parsed by the compiler or interpreter. For example, in many languages, statements must end with a semicolon.
 
 ### Tokens: 
-	Programs are made up of tokens, which are the smallest units of syntax. Tokens can be keywords, identifiers, operators, literals, and punctuation marks. For example, in the statement int x = 42;, the tokens include int, x, =, 42, and ;.
+Programs are made up of tokens, which are the smallest units of syntax. Tokens can be keywords, identifiers, operators, literals, and punctuation marks. For example, in the statement int x = 42;, the tokens include int, x, =, 42, and ;.
 
 ### Brackets and Delimiters:
-	Syntax also encompasses the use of brackets, parentheses, curly braces, and other delimiters to define code blocks and control the scope of variables and functions.
+Syntax also encompasses the use of brackets, parentheses, curly braces, and other delimiters to define code blocks and control the scope of variables and functions.
 
 ### Indentation: 
-	Some languages, like Python, use indentation as a part of their syntax to represent code blocks. Proper indentation is crucial for code readability and to determine the scope of statements.
+Some languages, like Python, use indentation as a part of their syntax to represent code blocks. Proper indentation is crucial for code readability and to determine the scope of statements.
 
 ### Case Sensitivity:
-	Many languages are case-sensitive, meaning that myVariable and myvariable are treated as distinct identifiers. this is by design so there is no overlap in references during runtime later on in the program. 
+Many languages are case-sensitive, meaning that myVariable and myvariable are treated as distinct identifiers. this is by design so there is no overlap in references during runtime later on in the program. 
 
 
 #  **Semantics** (examples)
   
 
 ### Meaning of Statements: 
-	Semantics defines the meaning of statements or expressions in a programming language. It describes what the code does when executed. For example, in x = x + 1;, the semantics dictate that x is incremented by 1.
+Semantics defines the meaning of statements or expressions in a programming language. It describes what the code does when executed. For example, in x = x + 1;, the semantics dictate that x is incremented by 1.
 
 ### Type System: 
-	Semantics also includes the type system, which specifies how data types are used and how they interact. A strong type system, like in C# or Java, enforces strict type rules, while a weak type system, like in JavaScript, allows more flexibility.
+Semantics also includes the type system, which specifies how data types are used and how they interact. A strong type system, like in C# or Java, enforces strict type rules, while a weak type system, like in JavaScript, allows more flexibility.
 
 ### Scope and Lifetime: 
-	Semantics specify the scope and lifetime of variables and how they are stored and accessed in memory. For example, local variables have limited scope and lifetime, while global variables exist throughout the program's execution.
+Semantics specify the scope and lifetime of variables and how they are stored and accessed in memory. For example, local variables have limited scope and lifetime, while global variables exist throughout the program's execution.
 
 ### Function Semantics: 
-	This includes how functions or methods are defined, called, and return values. Semantics dictate the rules for passing arguments, returning values, and the behavior of functions.
+This includes how functions or methods are defined, called, and return values. Semantics dictate the rules for passing arguments, returning values, and the behavior of functions.
 
 ### Recursive Semantics 
-	Recursion Semantics: The behavior and consequences of recursion, such as how recursion works and how deep the recursion stack can go, are part of the language's semantics.
+Recursion Semantics: The behavior and consequences of recursion, such as how recursion works and how deep the recursion stack can go, are part of the language's semantics.
  
  ```python
  def factorial(n):
@@ -229,15 +229,15 @@ In this revised code, we use `strconv.Atoi` to convert the string `y` into an in
 ```
 
 ### Concurrency Semantics: 
-	In languages that support concurrency, such as Go or Java, semantics define how multiple threads or processes interact, how they synchronize, and how data is shared or protected.
+In languages that support concurrency, such as Go or Java, semantics define how multiple threads or processes interact, how they synchronize, and how data is shared or protected.
 
 ### Error Handling: 
-	Semantics include how errors are handled in a language, whether through exceptions, return codes, or other mechanisms. How errors propagate and are caught is part of the language's semantics.
+Semantics include how errors are handled in a language, whether through exceptions, return codes, or other mechanisms. How errors propagate and are caught is part of the language's semantics.
 
 ### Memory Managements
-	How memory is allocated and deallocated, how references and pointers are handled, and how the garbage collector works are essential parts of memory management semantics.
+How memory is allocated and deallocated, how references and pointers are handled, and how the garbage collector works are essential parts of memory management semantics.
 
-	Manual Memory Management: In languages like C and C++, the semantics are explicit about memory allocation and deallocation, involving malloc, free, new, and delete.
+Manual Memory Management: In languages like C and C++, the semantics are explicit about memory allocation and deallocation, involving malloc, free, new, and delete.
 
 ```C
 int *x = (int *)malloc(sizeof(int));
