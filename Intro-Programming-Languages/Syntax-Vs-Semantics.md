@@ -1,8 +1,6 @@
 # **Syntax** and **Semantics** 
   are both fundamental concepts in programming languages. They define how code is structured (syntax) and what that code means (semantics). 
 
-### Let's break them down with examples in Go:
-
 **Syntax:**
 
 Syntax is all about the structure and rules that govern how you write code in a programming language. It's like the grammar of the language. If you violate syntax rules, your code won't even compile. Syntax varies greatly across the many programming languages to fullfill various language goals/requirements. 
@@ -17,7 +15,8 @@ Syntax is all about the structure and rules that govern how you write code in a 
 Most programming languages syntax are defined to be a familiar feel for programmers. Seeing the 4 different programming languages above you can see a common trend for declaring integer data types both statically and dynamically. 
 
 
-To keep consistent with our Golang examples
+### Let's break them down with examples in Go:
+
 here's an easy example of Go code that follows syntax rules:
 
 ```go
