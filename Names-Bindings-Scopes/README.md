@@ -1,6 +1,6 @@
-# Chapter 2: Names, Binding, and Scope
+# Chapter 2: Identifiers, Binding, and Scope
 
-This chapter explores the fundamental concepts of names, binding, and scope in programming. Understanding these concepts is crucial for writing clean, maintainable, and efficient code. In this chapter, we delve into various aspects of how programming languages manage and resolve identifiers and their scope.
+This chapter explores the fundamental concepts of identifiers, binding, and scope in programming. Understanding these concepts is crucial for writing clean, maintainable, and efficient code. In this chapter, we delve into various aspects of how programming languages manage and resolve identifiers and their scope.
 
 ### 2.1: Names, Identifiers, and Keywords
 
